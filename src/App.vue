@@ -1,30 +1,20 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style >
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@font-face {
+    font-family: "verdana";
+    src: url('./fonts/verdana.ttf') format('ttf');
 }
-
-nav {
-  padding: 30px;
+.pappins{
+    font-family: 'Poppins', sans-serif;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.verdana{
+    font-family: "verdana";
 }
 </style>
+
+
